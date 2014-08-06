@@ -1,0 +1,214 @@
+body {
+	margin: 0; padding: 0; background: #000; font-family: arial;
+}
+
+#page {
+	position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+	overflow: auto;
+}
+
+ul, li {
+	margin: 0; padding: 0; list-style: none; border: none;
+	height: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none; cursor: pointer; outline: none;
+}
+
+header {
+	height: 151px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	position: relative;
+	z-index: 1;
+}
+nav {
+	position: absolute;
+	top: 50px; left: 132px;
+}
+nav ul {
+	display: table;
+}
+nav ul li {
+	display: table-cell;
+	padding: 0 35px;
+}
+nav ul li a:hover {
+	color: #ccc;
+}
+nav ul li a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+header #logo {
+	position: absolute;
+	top: 0;
+	left: 35px;
+	display: block;
+	width: 96px;
+	height: 98px;
+	overflow: hidden;
+}
+.innovation-sub {
+	background: rgba(50,50,50,0.8);
+	display: table;
+	width: 100%;
+	position: absolute;
+	top: 98px;
+	padding: 10px 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.innovation-sub a {
+	display: table-cell;
+	width: 14.28%;
+	background: no-repeat 100% 50% / contain;
+	height: 33px;
+	background-origin:content-box;
+	padding: 0 30px;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=0.5);
+	-moz-opacity: 0.5;
+  	-khtml-opacity: 0.5;
+	opacity: 0.5;
+
+	transition: opacity .7s ease-in-out;
+    -moz-transition: opacity .7s ease-in-out;
+    -webkit-transition: opacity .7s ease-in-out;
+
+}
+.innovation-sub a.active {
+	-moz-opacity: 1;
+  	-khtml-opacity: 1;
+	opacity: 1;
+}
+.innovation-sub a:hover {
+	-moz-opacity: 0.5;
+  	-khtml-opacity: 0.5;
+	opacity: 1.0;
+
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+.innovation-sub a:first-child {
+	padding-left: 35px;
+	background-position: left 50%;
+}
+.innovation-sub a:last-child {
+	padding-right: 35px;
+}
+.innovation-sub a img {
+}
+#page.header-fixed header {
+	position: fixed;
+	top: -98px;
+}
+#page.header-fixed section {
+	padding-top: 151px;
+}
+#page.main-fixed #main {
+	position: relative;
+}
+#page.main-fixed #main div.text, #page.main-fixed #main div.text2 {
+	position: absolute;
+}
+#page.main-fixed.tech-fixed #main div.text {
+	position: fixed;
+	top: -73.4%;
+}
+#page.main-fixed.tech-fixed #main div.text2 {
+	-moz-opacity: 0;
+  	-khtml-opacity: 0;
+	opacity: 0;
+
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+section {
+
+
+}
+#main {
+ 
+}
+
+#main div.image {
+	width: 100%; height: 100%;
+	background: url('../storm_files/Storm_Section1_MainImage') no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+  	-khtml-opacity: 0;
+	opacity: 0;
+}
+
+#main div.text {
+	position: fixed; top: 64%; left: -50px; right: 66%; bottom: 0;
+	background: url('../images/storm_logo.png') no-repeat 50% 50% / 100% auto;
+	display: none; z-index: 3;
+}
+
+#main div.text.blur {
+	background-image: url('../images/storm_logo_speed.png');
+}
+#main div.text2 {
+	position: fixed; top: 78%; left: -46px; right: 66%; bottom: 0;
+	background: url('../images/Storm_1stParagraph.png') no-repeat 50% 50% / 100% auto;
+	display: none;
+
+	-moz-opacity: 1;
+  	-khtml-opacity: 1;
+	opacity: 1;
+
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+
+}
+
+#main div.text2.blur {
+	background-image: url('../images/Storm_1stParagraph_blur.png');
+}
+
+#tech .tech-trigger {
+	position: absolute; bottom: 250px; 
+}
+
+#tech {
+	position: relative;
+}
+
+#tech div.image {
+	width: 100%; height: 100%;
+	background: url('../storm_files/Storm_Section2_MainImage') no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#tech div.text {
+	position: absolute; top: 150px; left: 35px;
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+}
+footer {
+
+}
