@@ -57,6 +57,21 @@ tech_scroll = function(){
 	}
 }
 
+wrap_scroll = function(){
+	if (scrolled_to($('#tech + li'))) {
+		set_remove_class($('#page'),'tech-text-fixed');
+	} else {
+		$('#page').removeClass('tech-text-fixed');
+	}
+
+	if (scrolled_to($('#wrap-up + li'))) {
+		set_remove_class($('#page'),'wrap-fixed');
+	} else {
+		$('#page').removeClass('wrap-fixed');
+	}
+}
+
+
 $(document).ready(function(){
 	var $page = $('#page');	
 
@@ -71,6 +86,7 @@ $(document).ready(function(){
 
 	  main_scroll();
 	  tech_scroll();
+	  wrap_scroll();
 
 	});
 
